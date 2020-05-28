@@ -31,7 +31,7 @@ import javax.persistence.Table;
 	// ログインID（社員番号）とパスワードが正しいかをチェックする
     @NamedQuery(
         name = "checkLoginCodeAndPassword",
-        query = "SELECT e FROM Employee AS e WHERE e.delete_flag = 0 AND e.password = :pass"
+        query = "SELECT e FROM Employee AS e WHERE e.delete_flag = 0 AND e.code = :code AND e.password = :pass"
     )
 })
 @Entity
