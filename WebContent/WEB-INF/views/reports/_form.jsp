@@ -23,7 +23,7 @@
 <br /><br />
 
 <label for="content">内容</label><br />
-<textarea name="content" cols="50" rows="10">${report.content1}</textarea>
+<textarea name="content" cols="50" rows="10">${report.content}</textarea>
 <br /><br />
 
 <input type="hidden" name="_token" value="${_token}" />
